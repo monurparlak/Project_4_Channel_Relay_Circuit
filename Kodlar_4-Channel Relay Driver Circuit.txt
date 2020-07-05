@@ -1,0 +1,27 @@
+#define role_1 8
+#define role_2 9
+#define role_3 10
+#define role_4 11
+
+void setup() 
+{
+  pinMode(role_1, OUTPUT);
+  pinMode(role_2, OUTPUT);
+  pinMode(role_3, OUTPUT);
+  pinMode(role_4, OUTPUT);
+  delay(2000);
+}
+
+void loop() 
+{
+    digitalWrite(role_1, HIGH);
+    digitalWrite(role_2, HIGH);
+    digitalWrite(role_3, HIGH);
+    digitalWrite(role_4, HIGH);
+    delay(2000);
+    digitalWrite(role_1, LOW);
+    digitalWrite(role_2, LOW);
+    digitalWrite(role_3, LOW);
+    digitalWrite(role_4, LOW);
+    delay(2000);
+}
